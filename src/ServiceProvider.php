@@ -1,4 +1,4 @@
-<?php namespace davidpiesse\StockData;
+<?php namespace davidpiesse\stockdata;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
