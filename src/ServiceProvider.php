@@ -49,23 +49,23 @@ class ServiceProvider extends LaravelServiceProvider {
 
     private function handleConfigs() {
 
-        $configPath = __DIR__ . '/../config/packagename.php';
+        $configPath = __DIR__ . '/../config/stockdata.php';
 
-        $this->publishes([$configPath => config_path('packagename.php')]);
+        $this->publishes([$configPath => config_path('stockdata.php')]);
 
-        $this->mergeConfigFrom($configPath, 'packagename');
+        $this->mergeConfigFrom($configPath, 'stockdata');
     }
 
     private function handleTranslations() {
 
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'packagename');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'stockdata');
     }
 
     private function handleViews() {
 
-        $this->loadViewsFrom(__DIR__.'/../views', 'packagename');
+        $this->loadViewsFrom(__DIR__.'/../views', 'stockdata');
 
-        $this->publishes([__DIR__.'/../views' => base_path('resources/views/vendor/packagename')]);
+        $this->publishes([__DIR__.'/../views' => base_path('resources/views/davidpiesse/stockdata')]);
     }
 
     private function handleMigrations() {
