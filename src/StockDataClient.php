@@ -1,13 +1,13 @@
 <?php namespace davidpiesse\stockdata;
 
-class ClientApi
+class StockDataClient
 {
     //all the functions to get data in a laravel sort of way
 //    protected $client = new Schub
 
     //pass in single string or array
     public static function getStockList($stocks){
-        $client = Scheb\YahooFinanceApi\ApiClient();
+        $client = new \Scheb\YahooFinanceApi\ApiClient();
         return colect($client->getQuotesList($stocks));
     }
 

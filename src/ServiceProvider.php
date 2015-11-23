@@ -31,7 +31,6 @@ class ServiceProvider extends LaravelServiceProvider {
      * @return void
      */
     public function register() {
-
         $this->app->singleton('StockDataApiClient',function($app){
             return  new Scheb\YahooFinanceApi\ApiClient();
         });

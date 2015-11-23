@@ -2,7 +2,7 @@
   "name": "davidpiesse/stockdata",
   "description": "Yahoo Finance Data API Laravel Wrapper",
   "keywords": [],
-  "homepage": "",
+  "homepage": "https://packagist.org/packages/davidpiesse/stockdata",
   "license": "MIT",
   "authors": [
     {
