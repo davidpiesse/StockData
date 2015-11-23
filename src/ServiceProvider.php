@@ -33,7 +33,7 @@ class ServiceProvider extends LaravelServiceProvider {
     public function register() {
 
         $this->app->singleton('StockDataApiClient',function($app){
-            return  new \Scheb\YahooFinanceApi\ApiClient();
+            return  new Scheb\YahooFinanceApi\ApiClient();
         });
     }
 
