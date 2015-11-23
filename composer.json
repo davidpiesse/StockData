@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "davidpiesse\\StockData\\": "src/"
+      "davidpiesse\\stockdata\\": "src/"
     }
   },
   "minimum-stability": "dev"
